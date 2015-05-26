@@ -27,7 +27,7 @@ echo "oracle-java7-installer shared/accepted-oracle-license-v1-1 select true" | 
 
 # Install Dependencies
 apt-get update -qq
-apt-get install -qy unzip gzip oracle-java7-installer wget
+apt-get install -qy unzip mc gzip oracle-java7-installer wget
 
 #########################################
 ##             INSTALLATION            ##
