@@ -1,7 +1,7 @@
-docker-crashplan
+docker-Madsonic
 ================
 
-This is a Dockerfile setup for CrashPlan - https://www.crashplan.com
+This is a Dockerfile setup for Cloned from Gfjardim and tweaked for my settings.
 
 To run:
 
