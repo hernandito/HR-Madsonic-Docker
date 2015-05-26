@@ -1,16 +1,18 @@
 FROM phusion/baseimage:0.9.15
-MAINTAINER gfjardim <gfjardim@gmail.com>
+MAINTAINER hernando <gfjardim@gmail.com>
 
 #########################################
 ##        ENVIRONMENTAL CONFIG         ##
 #########################################
 
+
 # Set correct environment variables
 ENV DEBIAN_FRONTEND noninteractive
-ENV HOME            /root
-ENV LC_ALL          C.UTF-8
-ENV LANG            en_US.UTF-8
-ENV LANGUAGE        en_US.UTF-8
+ENV HOME /root
+ENV LC_ALL C.UTF-8
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US.UTF-8
+ENV TERM xterm
 
 # Use baseimage-docker's init system
 CMD ["/sbin/my_init"]
@@ -24,7 +26,8 @@ ADD config.sh /etc/my_init.d/config.sh
 ADD madsonic.sh /etc/service/madsonic/run
 
 RUN chmod +x /etc/service/*/run /etc/my_init.d/*
-
+RUN apt-get update
+RUN apt-get install -qy mc
 #########################################
 ##         EXPORTS AND VOLUMES         ##
 #########################################
