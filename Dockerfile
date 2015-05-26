@@ -26,8 +26,7 @@ ADD config.sh /etc/my_init.d/config.sh
 ADD madsonic.sh /etc/service/madsonic/run
 
 RUN chmod +x /etc/service/*/run /etc/my_init.d/*
-RUN apt-get update
-RUN apt-get install -qy mc
+
 #########################################
 ##         EXPORTS AND VOLUMES         ##
 #########################################
