@@ -33,8 +33,8 @@ apt-get install -qy unzip mc gzip oracle-java7-installer wget
 ##             INSTALLATION            ##
 #########################################
 
-MADSONIC_LINK="http://madsonic.org/download/5.2/20141214_madsonic-5.2.5420-standalone.tar.gz"
-TRANSCODE_LINK="http://madsonic.org/download/transcode/20141017_madsonic-transcode_latest_x64.zip"
+MADSONIC_LINK="http://madsonic.org/download/5.1/20150831_madsonic-5.1.5260-standalone.tar.gz"
+TRANSCODE_LINK="http://madsonic.org/download/transcode/20140114_madsonic-transcode_latest_x64.zip"
 
 # Install Madsonic
 mkdir -p /opt/madsonic /opt/transcode
